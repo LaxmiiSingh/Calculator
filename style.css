@@ -1,0 +1,169 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #001f3f; /* Dark blue background */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif; /* Font for the page */
+}
+
+/* Calculator Styles */
+.calculator {
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue background */
+    padding: 10px;
+    max-width: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#input, #result {
+    width: 48%; /* Adjust width to fit side by side */
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) inset;
+    background-color: #e0f7fa; /* Very light blue background */
+    color: #004d40; /* Dark teal text */
+}
+
+#result {
+    text-align: right;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    border: none; /* Removed border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #007bff; /* Default blue background for buttons */
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.clear {
+    background-color: #ff4136; /* Red for clear button */
+    color: white;
+}
+
+.operator {
+    background-color: #0056b3; /* Dark blue for operator buttons */
+    color: white;
+}
+
+.equal {
+    background: #007bff; /* Blue background for equal button */
+    grid-row: span 2;
+    color: white;
+}
+
+#history-button {
+    background-color: #004d40; /* Darker blue for history button */
+    color: white;
+}
+
+/* History Page Styles */
+.history-container {
+    background-color: #ffffff; /* White background for the history container */
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a lifted effect */
+    text-align: center;
+}
+
+.history-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Dark grey text color */
+}
+
+.history-content {
+    margin-bottom: 20px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#history-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+    color: #444; /* Slightly lighter grey for text */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#history-list li:hover {
+    background-color: #f9f9f9; /* Light grey background on hover */
+}
+
+#empty-message {
+    font-size: 18px;
+    color: #888; /* Light grey for empty message */
+}
+
+.hidden {
+    display: none;
+}
+
+#back-button {
+    background-color: #007bff; /* Blue background for back button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#clear-history-button {
+    background-color: #ff4136; /* Red for clear history button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Add some spacing below the button */
+}
+
+#clear-history-button:hover {
+    background-color: #e03e3e; /* Darker red on hover */
+}
